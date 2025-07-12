@@ -1,0 +1,9 @@
+import json
+
+def load_series(path: str) -> list:
+    series = []
+    with open(path, 'r') as f:
+        for line in f:
+            obj = json.loads(line)
+            series.append((obj['timestamp'], obj['value']))
+    return sorted(series)
