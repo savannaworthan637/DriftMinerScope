@@ -1,0 +1,100 @@
+
+---
+
+### 🐍 `driftminer/analyzer.py`
+```python
+import sys
+from history_loader import load_series
+from drift_detector import detect_drifts
+from plotter import plot_drift_result
+
+def analyze(file_path):
+    ts = load_series(file_path)
+    result = detect_drifts(ts)
+    plot_drift_result(ts, result)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python analyzer.py <jsonl_timeseries>")
+    else:
+        analyze(sys.argv[1])
+
+---
+
+### 🐍 `driftminer/analyzer.py`
+```python
+import sys
+from history_loader import load_series
+from drift_detector import detect_drifts
+from plotter import plot_drift_result
+
+def analyze(file_path):
+    ts = load_series(file_path)
+    result = detect_drifts(ts)
+    plot_drift_result(ts, result)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python analyzer.py <jsonl_timeseries>")
+    else:
+        analyze(sys.argv[1])
+
+---
+
+### 🐍 `driftminer/analyzer.py`
+```python
+import sys
+from history_loader import load_series
+from drift_detector import detect_drifts
+from plotter import plot_drift_result
+
+def analyze(file_path):
+    ts = load_series(file_path)
+    result = detect_drifts(ts)
+    plot_drift_result(ts, result)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python analyzer.py <jsonl_timeseries>")
+    else:
+        analyze(sys.argv[1])
+
+---
+
+### 🐍 `driftminer/analyzer.py`
+```python
+import sys
+from history_loader import load_series
+from drift_detector import detect_drifts
+from plotter import plot_drift_result
+
+def analyze(file_path):
+    ts = load_series(file_path)
+    result = detect_drifts(ts)
+    plot_drift_result(ts, result)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python analyzer.py <jsonl_timeseries>")
+    else:
+        analyze(sys.argv[1])
+
+---
+
+### 🐍 `driftminer/analyzer.py`
+```python
+import sys
+from history_loader import load_series
+from drift_detector import detect_drifts
+from plotter import plot_drift_result
+
+def analyze(file_path):
+    ts = load_series(file_path)
+    result = detect_drifts(ts)
+    plot_drift_result(ts, result)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python analyzer.py <jsonl_timeseries>")
+    else:
+        analyze(sys.argv[1])
