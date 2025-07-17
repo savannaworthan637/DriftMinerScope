@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+def plot_drift_result(series, drifts):
+    x = [ts for ts, _ in series]
+    y = [v for _, v in series]
+    dx = [x[i] for i, _ in drifts]
+    dy = [v for _, v in drifts]
+
+    plt.figure(figsize=(12, 6))
+    plt.plot(x, y, label="Value")
+    plt.scatter(dx, dy, color='red', label="Drifts")
+    plt.title("Drift Detection")
+    plt.xlabel("Timestamp")
+    plt.ylabel("Value")
+    plt.legend()
+    plt.tight_layout()
+    plt.show()
