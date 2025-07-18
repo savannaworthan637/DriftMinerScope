@@ -1,0 +1,28 @@
+from datetime import datetime
+
+def display_match(line: str, rule_name: str):
+    ts = datetime.utcnow().isoformat()
+    print(f"[MATCH][{ts}] Rule '{rule_name}' matched: {line.strip()}")
+    with open("matches.log", "a") as f:
+        f.write(f"{ts} | {rule_name} | {line}")
+from datetime import datetime
+
+def display_match(line: str, rule_name: str):
+    ts = datetime.utcnow().isoformat()
+    print(f"[MATCH][{ts}] Rule '{rule_name}' matched: {line.strip()}")
+    with open("matches.log", "a") as f:
+        f.write(f"{ts} | {rule_name} | {line}")
+from datetime import datetime
+
+def display_match(line: str, rule_name: str):
+    ts = datetime.utcnow().isoformat()
+    print(f"[MATCH][{ts}] Rule '{rule_name}' matched: {line.strip()}")
+    with open("matches.log", "a") as f:
+        f.write(f"{ts} | {rule_name} | {line}")
+from datetime import datetime
+
+def display_match(line: str, rule_name: str):
+    ts = datetime.utcnow().isoformat()
+    print(f"[MATCH][{ts}] Rule '{rule_name}' matched: {line.strip()}")
+    with open("matches.log", "a") as f:
+        f.write(f"{ts} | {rule_name} | {line}")
