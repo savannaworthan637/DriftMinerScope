@@ -1,0 +1,23 @@
+
+---
+
+### 🐍 `streambolt/scanner.py`
+```python
+import sys
+from rule_engine import RuleEngine
+from match_result import display_match
+
+def scan_file(path):
+    engine = RuleEngine()
+
+    with open(path) as f:
+        for line in f:
+            match = engine.match(line)
+            if match:
+                display_match(line, match)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python scanner.py <logfile>")
+    else:
+        scan_file(sys.argv[1])
