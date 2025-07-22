@@ -1,0 +1,21 @@
+
+---
+
+### 🐍 `whirlcaster/collector.py`
+```python
+import sys
+from router import dispatch
+from caster import parse_metric
+
+def main(filepath):
+    with open(filepath) as f:
+        for line in f:
+            metric = parse_metric(line)
+            if metric:
+                dispatch(metric)
+
+if __name__ == "__main__":
+    if len(sys.argv) != 2:
+        print("Usage: python collector.py <metric_file>")
+    else:
+        main(sys.argv[1])
